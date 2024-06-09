@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --primary-strong-cyan: hsl(172, 67%, 45%);
+  --neutral-very-dark-cyan: hsl(183, 100%, 15%);
+  --neutral-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --neutral-grayish-cyan: hsl(184, 14%, 56%);
+  --neutral-light-grayish-cyan: hsl(185, 41%, 84%);
+  --neutral-very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --neutral-white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: var(--neutral-light-grayish-cyan);
+}
+input {
+  font-size: 2.4rem;
+}
+label {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: var(--neutral-very-dark-cyan);
+}
+
+.outer-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.inner-container {
+  max-width: 920px;
+  min-width: 320px;
+  min-height: 481px;
+  padding: 32px;
+  border-radius: 20px;
+  background-color: var(--neutral-white);
+  gap: 48px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+
+/* -------------------------------RESPONSIVENESS------------------------------- */
+@media (min-width: 925px) {
+  .inner-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tip-options-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .button-container{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+   right: 40px;
+}
+
+}
+
+@media (max-width: 925px) {
+  .inner-container {
+    grid-template-columns: 1fr;
+  }
+  .tip-options-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .outer-container{
+    width: 90%;
+    margin: 5% auto;
+    margin-block: 25% 5% ;
+  }
+  .logo{
+    top: 50px;
+    position: relative;
+  }
+  .wrapper{
+margin: 0 auto;  }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

@@ -1,0 +1,43 @@
+.result-container{
+    background-color: var(--neutral-very-dark-cyan);
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    position: relative;
+    width: 100%;
+    
+}
+.tip-amount-container,.total-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.amount{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-strong-cyan);
+}
+span{
+    display: block;
+    font-size: 1.3rem;
+    opacity: .5;
+}
+p{
+    color: var( --neutral-white);
+    font-size: 1.6rem;
+    font-size: 700;
+}
+
+button{
+    height: 48px;
+    border: none;
+    background-color: var(--primary-strong-cyan);
+    opacity: .2;
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    width: 100%;
+
+}
